@@ -25,10 +25,6 @@ body {
     text-transform: uppercase;
 }
 
-.new-margin {
-    margin-bottom: 0.5rem;
-    margin-top: 10.5rem;
-}
 
 .main-logo-link {
     width: fit-content;
@@ -100,5 +96,16 @@ body {
         padding-top: 164px;
     }
 
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
 }
 
