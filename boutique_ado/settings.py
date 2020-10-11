@@ -28,10 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-if development:	
-    ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]	
-else:	
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+
+ALLOWED_HOSTS = ['adb994230c8e.ngrok.io']
+
 
 
 # Application definition
@@ -187,3 +186,4 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
