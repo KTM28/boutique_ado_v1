@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = development
 
 
-ALLOWED_HOSTS = ['adb994230c8e.ngrok.io']
+ALLOWED_HOSTS = [os.getenv('HOSTNAME')]
 
 
 
